@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{225333E6-16E4-4BF5-982A-F5AB786C0089}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.6</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.css" />
+    <Content Include="BlogApp\.gitignore" />
+    <Content Include="BlogApp\android\app\src\main\AndroidManifest.xml" />
+    <Content Include="BlogApp\android\app\src\main\java\com\blogapp\MainActivity.java" />
+    <Content Include="BlogApp\android\app\src\main\res\mipmap-hdpi\ic_launcher.png" />
+    <Content Include="BlogApp\android\app\src\main\res\mipmap-mdpi\ic_launcher.png" />
+    <Content Include="BlogApp\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png" />
+    <Content Include="BlogApp\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" />
+    <Content Include="BlogApp\android\app\src\main\res\values\strings.xml" />
+    <Content Include="BlogApp\android\app\src\main\res\values\styles.xml" />
+    <Content Include="BlogApp\android\gradle\wrapper\gradle-wrapper.jar" />
+    <TypeScriptCompile Include="BlogApp\index.android.tsx" />
+    <Content Include="BlogApp\index.ios.js" />
+    <Content Include="BlogApp\ios\BlogApp\AppDelegate.h" />
+    <Content Include="index.html" />
+    <Content Include="web.config" />
+    <TypeScriptCompile Include="typings\react-dom\react-dom.d.ts" />
+    <TypeScriptCompile Include="typings\react\react-global.d.ts" />
+    <TypeScriptCompile Include="typings\react\react.d.ts" />
+    <TypeScriptCompile Include="typings\requirejs\require.d.ts" />
+    <TypeScriptCompile Include="typings\tsd.d.ts" />
+    <TypeScriptCompile Include="typings\typescript\typescript.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BlogApp\.flowconfig" />
+    <Content Include="BlogApp\.watchmanconfig" />
+    <Content Include="BlogApp\android\app\build.gradle" />
+    <Content Include="BlogApp\android\app\proguard-rules.pro" />
+    <Content Include="BlogApp\android\build.gradle" />
+    <Content Include="BlogApp\android\gradle.properties" />
+    <Content Include="BlogApp\android\gradlew" />
+    <Content Include="BlogApp\android\gradlew.bat" />
+    <Content Include="BlogApp\android\gradle\wrapper\gradle-wrapper.properties" />
+    <Content Include="BlogApp\android\settings.gradle" />
+    <Content Include="BlogApp\ios\BlogApp.xcodeproj\project.pbxproj" />
+    <Content Include="BlogApp\ios\BlogApp.xcodeproj\xcshareddata\xcschemes\BlogApp.xcscheme" />
+    <Content Include="BlogApp\ios\BlogAppTests\BlogAppTests.m" />
+    <Content Include="BlogApp\ios\BlogAppTests\Info.plist" />
+    <Content Include="BlogApp\ios\BlogApp\AppDelegate.m" />
+    <Content Include="BlogApp\ios\BlogApp\Base.lproj\LaunchScreen.xib" />
+    <Content Include="BlogApp\ios\BlogApp\Images.xcassets\AppIcon.appiconset\Contents.json" />
+    <Content Include="BlogApp\ios\BlogApp\Info.plist" />
+    <Content Include="BlogApp\ios\BlogApp\main.m" />
+    <Content Include="BlogApp\ios\main.jsbundle" />
+    <Content Include="BlogApp\package.json" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BlogWeb\" />
+    <Folder Include="Components\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>BlogApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51994</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51994/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>
