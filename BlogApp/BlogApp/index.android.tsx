@@ -20,14 +20,11 @@ class CommentBox extends React.Component<ICommentBox, any> {
         super(props, context);
         
     }
-
-    public setState() {
-
-    }
+    
 
     public render() {
-        
-        return '<View ><TouchableNativeFeedback></TouchableNativeFeedback></View>';
+
+        return null;
     }
 }
 
