@@ -22,7 +22,6 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app.css" />
     <Content Include="BlogApp\.gitignore" />
     <Content Include="BlogApp\android\app\src\main\AndroidManifest.xml" />
     <Content Include="BlogApp\android\app\src\main\java\com\blogapp\MainActivity.java" />
@@ -33,17 +32,56 @@
     <Content Include="BlogApp\android\app\src\main\res\values\strings.xml" />
     <Content Include="BlogApp\android\app\src\main\res\values\styles.xml" />
     <Content Include="BlogApp\android\gradle\wrapper\gradle-wrapper.jar" />
-    <TypeScriptCompile Include="BlogApp\index.android.tsx" />
+    <None Include="BlogApp\index.android.jsx" />
     <Content Include="BlogApp\index.ios.js" />
     <Content Include="BlogApp\ios\BlogApp\AppDelegate.h" />
-    <Content Include="index.html" />
+    <Content Include="BlogWeb\Components\Comment.js">
+      <DependentUpon>Comment.jsx</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\Comment.jsx" />
+    <None Include="BlogWeb\Components\CommentBox.jsx" />
+    <Content Include="BlogWeb\Components\Comment.min.js">
+      <DependentUpon>Comment.js</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\CommentBox.js">
+      <DependentUpon>CommentBox.jsx</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\CommentBox.min.js">
+      <DependentUpon>CommentBox.js</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\CommentForm.js">
+      <DependentUpon>CommentForm.jsx</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\CommentForm.min.js">
+      <DependentUpon>CommentForm.js</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\CommentList.js">
+      <DependentUpon>CommentList.jsx</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\Components\CommentList.min.js">
+      <DependentUpon>CommentList.js</DependentUpon>
+    </Content>
+    <Content Include="BlogWeb\index.html" />
+    <Content Include="node_modules\react-dom\dist\react-dom.js" />
+    <Content Include="node_modules\react\dist\react-with-addons.js" />
+    <Content Include="node_modules\react\dist\react.js" />
+    <Content Include="node_modules\requirejs\require.js" />
+    <Content Include="packages.config" />
+    <Content Include="BlogWeb\Components\CommentForm.jsx" />
+    <Content Include="BlogWeb\Components\CommentList.jsx" />
+    <None Include="compilerconfig.json" />
+    <Content Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </Content>
+    <None Include="scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="scripts\a.js" />
+    <Content Include="scripts\b.js" />
+    <Content Include="scripts\jquery-2.1.4.js" />
+    <Content Include="scripts\jquery-2.1.4.min.js" />
+    <TypeScriptCompile Include="scripts\test.tsx" />
     <Content Include="web.config" />
-    <TypeScriptCompile Include="typings\react-dom\react-dom.d.ts" />
-    <TypeScriptCompile Include="typings\react\react-global.d.ts" />
-    <TypeScriptCompile Include="typings\react\react.d.ts" />
-    <TypeScriptCompile Include="typings\requirejs\require.d.ts" />
-    <TypeScriptCompile Include="typings\tsd.d.ts" />
-    <TypeScriptCompile Include="typings\typescript\typescript.d.ts" />
+    <Content Include="scripts\jquery-2.1.4.min.map" />
+    <None Include="scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="BlogApp\.flowconfig" />
@@ -75,7 +113,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BlogWeb\" />
+    <Folder Include="BlogApp\node_modules\" />
     <Folder Include="Components\" />
   </ItemGroup>
   <PropertyGroup>
@@ -108,7 +146,7 @@
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
     <TypeScriptSourceMap>true</TypeScriptSourceMap>
     <TypeScriptTarget>ES5</TypeScriptTarget>
-    <TypeScriptJSXEmit>React</TypeScriptJSXEmit>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
     <TypeScriptModuleKind>None</TypeScriptModuleKind>

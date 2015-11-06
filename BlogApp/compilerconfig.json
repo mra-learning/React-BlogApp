@@ -1,0 +1,34 @@
+﻿[
+  {
+    "outputFile": "BlogWeb/Comment.js",
+    "inputFile": "BlogWeb/Comment.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/CommentBox.js",
+    "inputFile": "BlogWeb/CommentBox.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/CommentForm.js",
+    "inputFile": "BlogWeb/CommentForm.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/CommentList.js",
+    "inputFile": "BlogWeb/CommentList.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/Components/CommentBox.js",
+    "inputFile": "BlogWeb/Components/CommentBox.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/Components/CommentForm.js",
+    "inputFile": "BlogWeb/Components/CommentForm.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/Components/CommentList.js",
+    "inputFile": "BlogWeb/Components/CommentList.jsx"
+  },
+  {
+    "outputFile": "BlogWeb/Components/Comment.js",
+    "inputFile": "BlogWeb/Components/Comment.jsx"
+  }
+]
