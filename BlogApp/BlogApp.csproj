@@ -33,6 +33,12 @@
     <Content Include="BlogApp\android\app\src\main\res\values\styles.xml" />
     <Content Include="BlogApp\android\gradle\wrapper\gradle-wrapper.jar" />
     <None Include="BlogApp\index.android.jsx" />
+    <Content Include="BlogApp\index.android.js">
+      <DependentUpon>index.android.jsx</DependentUpon>
+    </Content>
+    <Content Include="BlogApp\index.android.min.js">
+      <DependentUpon>index.android.js</DependentUpon>
+    </Content>
     <Content Include="BlogApp\index.ios.js" />
     <Content Include="BlogApp\ios\BlogApp\AppDelegate.h" />
     <Content Include="BlogWeb\Components\Comment.js">

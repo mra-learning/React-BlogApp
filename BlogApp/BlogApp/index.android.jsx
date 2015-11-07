@@ -4,16 +4,16 @@
  */
 'use strict';
 
-//var React = require('react-native');
-//var {
-//  AppRegistry,
-//  StyleSheet,
-//  Text,
-//  View,
-//  TouchableNativeFeedback,
-//  ListView
+var React = require('react-native');
+var {
+  AppRegistry,
+  StyleSheet,
+  Text,
+  View,
+  TouchableNativeFeedback,
+  ListView
 
-//} = React;
+} = React;
 
 var BlogApp = React.createClass({
   render: function() {
@@ -27,8 +27,8 @@ var BlogApp = React.createClass({
         </Text>
         <TouchableNativeFeedback
             onPress={this._onPressButton}
-            background={TouchableNativeFeedback.SelectableBackground()}>
-          <View style={{width: 150, height: 100, backgroundColor: 'red'}}>
+            >
+          <View >
             <Text style={{margin: 30}}>Button</Text>
           </View>
         </TouchableNativeFeedback>

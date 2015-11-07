@@ -6,22 +6,12 @@ require(['Components/CommentList', 'Components/CommentForm'], function (CommentL
         displayName: 'CommentBox',
 
         loadCommentsFromServer: function loadCommentsFromServer() {
-            $.ajax({
-                url: this.props.url,
-                dataType: 'json',
-                cache: false,
-                success: (function (data) {
-                    this.setState({ data: data });
-                }).bind(this),
-                error: (function (xhr, status, err) {
-                    console.error(this.props.url, status, err.toString());
-                }).bind(this)
-            });
+            this.setState({ data: [{ key: 1, author: 'Manuel REina', text: 'React comment' }] });
         },
         handleCommentSubmit: function handleCommentSubmit(comment) {
-            //var comments = this.state.data;
-            //var newComments = comments.concat([comment]);
-            //this.setState({data: newComments});
+            var comments = this.state.data;
+            var newComments = comments.concat([comment]);
+            this.setState({ data: newComments });
             //$.ajax({
             //    url: this.props.url,
             //    dataType: 'json',
@@ -39,8 +29,8 @@ require(['Components/CommentList', 'Components/CommentForm'], function (CommentL
             return { data: [] };
         },
         componentDidMount: function componentDidMount() {
-            this.loadCommentsFromServer();
-            setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+            //this.loadCommentsFromServer();
+            //setInterval(this.loadCommentsFromServer, this.props.pollInterval);
         },
         render: function render() {
             return React.createElement(

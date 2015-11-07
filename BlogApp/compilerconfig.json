@@ -30,5 +30,9 @@
   {
     "outputFile": "BlogWeb/Components/Comment.js",
     "inputFile": "BlogWeb/Components/Comment.jsx"
+  },
+  {
+    "outputFile": "BlogApp/index.android.js",
+    "inputFile": "BlogApp/index.android.jsx"
   }
 ]

@@ -10,7 +10,7 @@ var CommentForm = React.createClass({
         if (!text || !author) {
             return;
         }
-        // TODO: send request to the server
+        this.props.onCommentSubmit({ author: author, text: text });
         this.refs.author.value = '';
         this.refs.text.value = '';
         return;
@@ -25,7 +25,8 @@ var CommentForm = React.createClass({
         );
     }
 });
-define("Components/CommentForm", [], function () {
+
+define([], function () {
     return CommentForm;
 });
 

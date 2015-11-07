@@ -1,24 +1,23 @@
-﻿require(['Comment'], function (Comment) {
+﻿define(['Components/Comment'], function (Comment) {
     
-    var CommentList = React.createClass({
+   return React.createClass({
 
         render: function () {
-            var commentNodes = this.props.data.map(function (comment) {
+            var commentNodes = this.props.data.map(function (comment, i) {
                 return (
-                  <Comment author={comment.author}>
+                  <Comment key={i} author={comment.author}>
                     {comment.text}
                  </Comment>
               );
-            });
-            return (
-              <div className="commentList">
+        });
+
+        return (
+            <div className="commentList">
                 {commentNodes}
-             </div>
-                );
+            </div>
+            );
         }
     });
-
-    define("CommentList", [], function () { return CommentList; });
 
 });
 
