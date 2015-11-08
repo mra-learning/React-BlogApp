@@ -22,7 +22,7 @@ If you are using Visual Studio 2015 and you have installed the web compiler exte
 
 2- Once you have everything up and running, clone this repository using the VS github extension.
 
-3- Run the "npm install" command on both BlogApp and BlogApp/BlogApp folders and you should be done.
+3- Run the "npm install" command on both "BlogApp" and "BlogApp/BlogApp" folders and you should be done.
 
 
 If you run the web site it will work.
