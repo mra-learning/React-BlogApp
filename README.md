@@ -19,8 +19,11 @@ Sorry if the below steps don't work for you. I am making changes to the project 
 If you are using Visual Studio 2015 and you have installed the web compiler extension, we can start.
 
 1- Follow carefully the <a href="https://facebook.github.io/react-native/docs/getting-started.html#content">React Native QuickStart guide </a>.
+
 2- Once you have everything up and running, clone this repository using the VS github extension.
+
 3- Run the "npm install" command on both BlogApp and BlogApp/BlogApp folders and you should be done.
+
 
 If you run the web site it will work.
 If you run the android app and you are using Windows don't forget to run the "node node_modules/react-native/packager/packager.js" command on the BlogApp/BlogApp path and then react-native run-android
