@@ -5,6 +5,8 @@
 'use strict';
 
 var React = require('react-native');
+var NotificationAndroid = require('NotificationAndroid');
+
 var {
   AppRegistry,
   StyleSheet,
@@ -16,6 +18,7 @@ var {
 } = React;
 
 var BlogApp = React.createClass({
+
   render: function() {
     return (
       <View style={styles.container}>
@@ -26,10 +29,11 @@ var BlogApp = React.createClass({
           
         </Text>
         <TouchableNativeFeedback
-            onPress={this._onPressButton}
+            onPress={() =>
+            NotificationAndroid.show('The synchronization finished successfully', 'Sync', NotificationAndroid.NOTIFICATION, 1234)}
             >
           <View >
-            <Text style={{margin: 30}}>Button</Text>
+            <Text style={{margin: 30}}>Sync</Text>
           </View>
         </TouchableNativeFeedback>
       </View>

@@ -5,6 +5,8 @@
 'use strict';
 
 var React = require('react-native');
+var NotificationAndroid = require('NotificationAndroid');
+
 var AppRegistry = React.AppRegistry;
 var StyleSheet = React.StyleSheet;
 var Text = React.Text;
@@ -28,7 +30,9 @@ var BlogApp = React.createClass({
       React.createElement(
         TouchableNativeFeedback,
         {
-          onPress: this._onPressButton
+          onPress: function () {
+            return NotificationAndroid.show('The synchronization finished successfully', 'Sync', NotificationAndroid.NOTIFICATION, 1234);
+          }
         },
         React.createElement(
           View,
@@ -36,7 +40,7 @@ var BlogApp = React.createClass({
           React.createElement(
             Text,
             { style: { margin: 30 } },
-            'Button'
+            'Sync'
           )
         )
       )

@@ -1,4 +1,6 @@
 ﻿
+var Button = ReactBootstrap.Button;
+
 var CommentForm = React.createClass({
     handleSubmit: function(e) {
         e.preventDefault();
@@ -17,7 +19,7 @@ var CommentForm = React.createClass({
           <form className="commentForm" onSubmit={this.handleSubmit}>
           <input type="text" placeholder="Your name" ref="author" />
         <input type="text" placeholder="Say something..." ref="text" />
-        <input type="submit" value="Post" />
+        <Button bsStyle="danger">Post</Button> 
       </form>
     );
 }

@@ -25,6 +25,7 @@
     <Content Include="BlogApp\.gitignore" />
     <Content Include="BlogApp\android\app\src\main\AndroidManifest.xml" />
     <Content Include="BlogApp\android\app\src\main\java\com\blogapp\MainActivity.java" />
+    <Content Include="BlogApp\android\app\src\main\java\com\blogapp\shell\MainPackage.java" />
     <Content Include="BlogApp\android\app\src\main\res\mipmap-hdpi\ic_launcher.png" />
     <Content Include="BlogApp\android\app\src\main\res\mipmap-mdpi\ic_launcher.png" />
     <Content Include="BlogApp\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png" />
@@ -33,6 +34,9 @@
     <Content Include="BlogApp\android\app\src\main\res\values\styles.xml" />
     <Content Include="BlogApp\android\gradle\wrapper\gradle-wrapper.jar" />
     <None Include="BlogApp\index.android.jsx" />
+    <Content Include="BlogApp\android\app\src\main\java\com\blogapp\modules\notification\NotificationAndroid.android.js" />
+    <Content Include="BlogApp\node_modules\react-native\Libraries\react-native\react-native.js" />
+    <Content Include="BlogApp\android\app\src\main\java\com\blogapp\modules\notification\NotificationModule.java" />
     <Content Include="BlogApp\index.android.js">
       <DependentUpon>index.android.jsx</DependentUpon>
     </Content>
@@ -79,12 +83,10 @@
     <Content Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </Content>
+    <Content Include="package.json" />
     <None Include="scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="scripts\a.js" />
-    <Content Include="scripts\b.js" />
     <Content Include="scripts\jquery-2.1.4.js" />
     <Content Include="scripts\jquery-2.1.4.min.js" />
-    <TypeScriptCompile Include="scripts\test.tsx" />
     <Content Include="web.config" />
     <Content Include="scripts\jquery-2.1.4.min.map" />
     <None Include="scripts\_references.js" />
@@ -119,8 +121,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BlogApp\node_modules\" />
-    <Folder Include="Components\" />
+    <Folder Include="BlogApp\node_modules\react-native\Libraries\Components\" />
+    <Folder Include="BlogApp\node_modules\react-native\ReactAndroid\src\main\java\com\facebook\react\modules\common\" />
+    <Folder Include="BlogApp\node_modules\react-native\ReactAndroid\src\main\java\com\facebook\react\shell\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
