@@ -28,7 +28,7 @@ If you are using Visual Studio 2015 and you have installed the web compiler exte
 If you run the web site it will work.
 If you run the android app and you are using Windows don't forget to run the "node node_modules/react-native/packager/packager.js" command on the "BlogApp/BlogApp" path and then "react-native run-android"
 
-Hope this help.
+Hope this helps.
 
 
 
